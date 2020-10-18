@@ -1,0 +1,151 @@
+﻿body{
+    background-image: url("../images/background.jpg"); /* ".." ponto ponto usa-se para sair das pastas */
+    background-repeat: no-repeat; /* repetir ou nao repetir a imagem no corpo do site*/
+    background-size: 100%;  /* Largura x ALtura*/
+    background-attachment: fixed; /* para fixar o background, ele nao mexe junto com a bolinha do mouse*/
+}
+
+a:link{
+    color:  rgb(241, 241, 241); /*para nao mudar a cor do link precisa add os 4 estados, estado 1 */
+    /* text-decoration: none;  --- para nao ter decoraçao nenhuma no link*/ 
+    text-decoration: none; 
+}
+
+a:visited{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 2  */
+    text-decoration: none; 
+}
+
+a:active{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 3  */
+    text-decoration: none; 
+}
+
+a:hover{
+    color:  rgb(255, 255, 255); /*para nao mudar a cor do link precisa add os 4 estados, estado 4  */
+    text-decoration: none; 
+}
+
+.social-icons{
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(20, 89, 238); 
+    
+    font-size: 28px;
+
+    /* PARA CENTRALIZAR OBJETOS ..... */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* PARA CENTRALIZAR OBJETOS ..... FIM */
+
+    transition: 0.2s;  /* suavizar o efeito quando o mouse passar por cima, nunca usar virgula, sempre ponto */
+
+}
+
+
+.social-icons:hover{ /*quando o mouse passar o icone do face ou whats vai aumentar */
+    width: 42px;
+    height: 42px;
+    /*quando o mouse passar o icone do face ou whats vai aumentar ..... FIM */
+
+    border-radius: 100%;  /*para deixar o objeto redondo quando o mouse passar */
+
+    transform: rotate(20deg);  /* para girar o objeto, sempre usar a notação em graus, se quizer girar para o outro lado basta por o graus em negativo, -10deg */
+
+}
+
+#social-facebook{
+    /* color:  rgb(255, 255, 255); */
+    background-color: #3b5998;   
+}
+
+#social-whatsapp{
+    color: #ffffff;
+    background-color: #34af23;
+}
+
+#social-instagran{
+    color: #ffffff;
+    background-image: linear-gradient(45deg, rgb(63, 0, 165), rgb(184, 0, 153), rgb(255, 255, 0));
+/* background-imagem linear gradient para preencher a div de varias cores, e usa a rotação em graus de 40deg, para mudar o sentido que as cores sao pintadas */
+
+}
+
+
+#topo{
+    position: fixed; /*para deixar o top do site fixo, quando eu deco com ele com o mouse ele fica fixo no site inteiro */
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236, 155, 49);
+
+    box-shadow: 2px 2px 5px #000000; /* para criar um sombreamento na div */
+    z-index: 100;   /* para colocar a DIV na frente ou sobrepor uma outra*/
+
+    font-size: 36px; /* AUMENTOU =O TAMANHO DA FONTE OU ICONE*/
+    color:  rgb(59, 89, 152)  /*geralmente usa-se o codigo da cor exata da marca */
+}
+
+#conteudo{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(146, 146, 146);
+
+    margin-left: 10% /* criar uma margem a esquerda*/
+}
+
+#titulo-noticia{
+    position: relative; /* pede sempre o float diferente o absolute que pede a posiçao*/
+    float: left; /* flutua o objeto para esquerda*/
+    width: 98%;
+    height: 40px;
+    background-color: rgb(238, 238, 238);
+
+    margin: 1%;
+
+    box-shadow: 2px 2px 5px #000000;
+    
+}
+
+.noticias{
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+
+    margin: 1%;    
+}
+
+
+
+/*Quando o mouse passar na classe noticias FAÇA ISSO */
+.noticias:hover{
+    background-color: blue;
+    box-shadow: 2px 2px 5px #000000;
+    
+
+}
+
+.noticias-manchete{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(38, 28, 172);
+}
+
+.noticias-texto{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}
